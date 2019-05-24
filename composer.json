@@ -24,7 +24,7 @@
         "drupal/config_role_split": "^1.0@beta",
         "drupal/config_split": "^1.4",
         "drupal/console": "^1.0.2",
-        "drupal/core": "8.5.14",
+        "drupal/core": "8.6.13",
         "drupal/ctools": "^3.0",
         "drupal/default_content_deploy": "^1.0@alpha",
         "drupal/devel": "^2.0",
