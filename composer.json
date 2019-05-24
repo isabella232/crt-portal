@@ -41,6 +41,7 @@
         "drupal/tour_ui": "^1.0@alpha",
         "drupal/uswds": "^1.0@beta",
         "drupal/uswds_paragraphs": "1.x-dev#f7927a6e7bc5bf12a222e960e844af8b223e3fd7",
+        "drupal/webform": "^5.2",
         "drush/drush": "~8.0|^9.0.0-beta8",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
