@@ -29,6 +29,7 @@ else
 fi
 
 install_drupal() {
+    echo "Starting Drupal install..."
     ROOT_USER_NAME=$(echo $SECRETS | jq -r '.ROOT_USER_NAME')
     ROOT_USER_PASS=$(echo $SECRETS | jq -r '.ROOT_USER_PASS')
 
@@ -53,6 +54,7 @@ install_drupal() {
 }
 
 if [ "${CF_INSTANCE_INDEX:-''}" == "0" ] && [ "${APP_NAME}" == "web" ]; then
+  echo "Starting Drupal update..."
   drupal --root=$APP_ROOT/web list | grep database > /dev/null || install_drupal
   # Mild data migration: fully delete database entries related to these
   # modules. These plugins (and the dependencies) can be removed once they've
